@@ -207,6 +207,14 @@ h5 {
   }
 }
 
+.content-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px 24px;
+}
+
+
+
 @keyframes button-loading {
   0% {
     opacity: 1;

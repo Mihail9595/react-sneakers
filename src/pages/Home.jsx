@@ -39,7 +39,7 @@ const Home = ({
                 </div>
             </div>
 
-            <div className='d-flex flex-wrap'>
+            <div className='content-1'>
                 {renderItems()}
             </div>
 
