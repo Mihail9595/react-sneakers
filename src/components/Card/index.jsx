@@ -64,7 +64,7 @@ const Card = ({
           <div >
             {onPlus &&
               <img className={styles.plus} onClick={onClickPlus}
-                src={isAItemAdded(id) ? "/img/btn-checked.svg" : "/img/btn-plus.svg"} alt="plus" />
+                src={isAItemAdded(id) ? "img/btn-checked.svg" : "img/btn-plus.svg"} alt="plus" />
             }
           </div>
         </div> </>}

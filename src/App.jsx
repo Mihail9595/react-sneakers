@@ -10,7 +10,6 @@ import Orders from './pages/Orders';
 
 export const AppContext = createContext({})
 
-
 function App() {
 
   const [items, setItems] = useState([]);
@@ -19,9 +18,6 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
   const [cartOpened, setCartOpened] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
-
-
 
   // при пустом массиве в useEffect действие выполнится только в один раз
   // следит за отрисовкой компонента в котором находится
