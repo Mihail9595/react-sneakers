@@ -3,7 +3,7 @@ import { AppContext } from '../App';
 import Card from '../components/Card';
 
 const Favorites = () => {
-    const {favorites, onAddToFavorite} = useContext(AppContext);
+    const {favorites, onAddToFavorite, onAddTocart} = useContext(AppContext);
 
     return (
     
@@ -13,11 +13,12 @@ const Favorites = () => {
                     <h1>Мои закладки</h1>
                 </div>
 
-                <div className='d-flex flex-wrap'>
+                <div className='wrapper-1 d-flex flex-wrap'>
                 {favorites.map((item, index) => (
                     <Card title={item.title} price={item.price} imageUrl={item.imageUrl} key={index}
                     favorited={true}
-                    onPlus={(obj) => {onAddTocart(obj)}} 
+                    // onPlus={(obj) => {onAddTocart(obj)}} 
+                    onPlus={onAddTocart}
                     onFavorite={onAddToFavorite}
                     id={item.id}
                     // {...item}

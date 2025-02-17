@@ -26,12 +26,10 @@ const Orders = () => {
                 <h1>Мои заказы</h1>
             </div>
 
-            <div className='d-flex flex-wrap'>
+            <div className='wrapper-1 d-flex flex-wrap'>
                {(isLoading ? [...Array(8)] : orders).map((item, index) => (
                     <Card
                         key={index}
-                        // onFavorite={(obj) => { onAddToFavorite(obj) }}
-                        // onPlus={(obj) => { onAddTocart(obj) }}
                         loading={isLoading}
                         {...item}
                     />

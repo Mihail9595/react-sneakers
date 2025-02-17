@@ -210,7 +210,25 @@ h5 {
 .content-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px 24px;
+  gap: 20px;
+}
+
+.wrapper-1 {
+  gap: 20px;
+}
+
+.top {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+header {
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @media (max-width:600px) {
+    justify-content: center !important;
+  }
 }
 
 
